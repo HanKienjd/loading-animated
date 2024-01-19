@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 
 import styled from 'styled-components';
 import { hexToHSL } from './common';
+import ReactDOM from "react-dom";
+
 import { GlobalSpinnerProps, LoadingProps, SpinnerOriginalProps } from './interface.dto';
 
 const SpinnerContainer = styled.div`
@@ -109,7 +111,7 @@ const SpinnerOriginal: React.FC<SpinnerOriginalProps> = ({ className, color }) =
   );
 };
 
-const GlobalSpinner = styled(SpinnerOriginal)<GlobalSpinnerProps>`
+const GlobalSpinner = styled(SpinnerOriginal) <GlobalSpinnerProps>`
   width: ${(props) => props.size || '8em'};
   height: ${(props) => props.size || '8em'};
   circle {
@@ -313,3 +315,4 @@ export const Loading: React.FC<LoadingProps> = ({ color, size }) => {
     </SpinnerContainer>
   );
 };
+

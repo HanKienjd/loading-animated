@@ -1,5 +1,5 @@
 {
-  "name": "Loading Animated",
+  "name": "@HanKienjd/loading-animated",
   "version": "1.0.0",
   "author": "Han",
   "keywords": [
@@ -7,13 +7,33 @@
   ],
   "repository": "https://github.com/HanKienjd/Loading-Animated",
   "description": "Loading Animated",
-  "main": "index.tsx",
-  "scripts": {},
+  "main": "dist/index.umd.js",
+  "module": "dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
   "dependencies": {
     "@types/react": "^18.2.35",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "styled-components": "^6.1.0",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "vite": "^5.0.11"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react-dom": "^18.2.18"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "styled-components": "^6.1.0"
+  },
+  "publishConfig": {
+    "@HanKienjd:registry": "https://npm.pkg.github.com/"
+  }
 }
