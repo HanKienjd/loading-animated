@@ -2,6 +2,7 @@
   "name": "@HanKienjd/loading-animated",
   "version": "1.0.0",
   "author": "Han",
+  "private": false,
   "keywords": [
     "Loading Animated"
   ],
@@ -14,24 +15,20 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build && tsc",
+    "test": "echo \"Error: no test specified\" && exit 0"
   },
-  "dependencies": {
-    "@types/react": "^18.2.35",
+  "dependencies": {},
+  "license": "MIT",
+  "devDependencies": {
+    "@types/react": "^18.2.48",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "styled-components": "^6.1.0",
     "typescript": "^5.2.2",
     "vite": "^5.0.11"
   },
-  "license": "MIT",
-  "devDependencies": {
-    "@types/react-dom": "^18.2.18"
-  },
   "peerDependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "styled-components": "^6.1.0"
+    "react": "^18.2.0"
   },
   "publishConfig": {
     "@HanKienjd:registry": "https://npm.pkg.github.com/"
