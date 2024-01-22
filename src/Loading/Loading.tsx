@@ -4,7 +4,7 @@ import React, { useMemo } from 'react';
 import styled from 'styled-components';
 import { hexToHSL } from '../common';
 
-import { GlobalSpinnerProps, LoadingProps, SpinnerOriginalProps } from './interface.dto';
+import { GlobalSpinnerProps, LoadingProps, SpinnerOriginalProps } from '../interface.dto';
 
 const SpinnerContainer = styled.div`
   height: 100%;
